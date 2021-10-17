@@ -65,54 +65,28 @@
             </div> 
         </div>
         
-        <!-- <div id="current_card" style="display: none;">
-            <form class="mx-2 w-75 " id="payment_form">
-                <h3>Debit card details</h3>
-                <div class="mb-3">
-                    <label class="form-label" for="cardNumber">Card Number</label>
-                    <input type="number" class="form-control" id="cardNumber" placeholder="1234 5678 9000">
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <label class="form-label" for="currentDate">Expiration date (MM/YYYY)</label>
-                        <input type="date" class="form-control" id="currentDate" placeholder="16/10/2021">
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <label class="form-label" for="customerCvv">cvv</label>
-                        <input type="number" class="form-control" id="customerCvv" placeholder="711">
-                    </div>
-                    
-                </div>
-                <div class="pt-3">
-                    <h5 class="text-danger fs-6">Remove card</h5>
-                </div>
-                
-            </form>
-        </div> -->
-        
         <div id="card_detials" style="display: none;">
-            <form class="mx-2 w-75" id="cardentry_detials">
-                <h4 class="">Enter card details</h4>
-                <p class="py-2 fs-4" id="errmesg"></p>
+            
+            <form class="mx-2 w-75" id="form2">
+                <h4 class="pt-3">Enter card details</h4>
+                <p class="py-2 fs-4" id="errmeg"></p>
                 <div class="mb-3">
                     <label class="form-label" for="cardNumber">Card Number</label>
-                    <input type="number" class="form-control" id="cardNumber" placeholder="1234 5678 9000">
+                    <input type="number" class="form-control" id="card_number" placeholder="1234 5678 9000">
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <label class="form-label" for="dueDate">Expiration date (MM/YYYY)</label>
-                        <input type="date" class="form-control" id="dueDate" placeholder="16/10/2021">
+                        <input type="date" class="form-control" id="duration_date" placeholder="16/10/2021">
                     </div>
                     <div class="col-12 col-md-4">
                         <label class="form-label" for="customerCvv">cvv</label>
-                        <input type="number" class="form-control" id="customerCvv" placeholder="711">
+                        <input type="number" class="form-control" id="protect_cvv" placeholder="711">
                     </div>
-                    
                 </div>
                 <div class="pt-5" >
                     <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
-                
             </form>
         </div>
         
@@ -121,8 +95,7 @@
 
   
 
-
-   <script src="./js/form.js"></script>
+    <script src="./js/payment_form.js"></script>
     <script src="./js/payment_info.js"></script>    
     <script src="./js/bootstrap.min.js"></script>
 </body>
