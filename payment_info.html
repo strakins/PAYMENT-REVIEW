@@ -16,7 +16,9 @@
         <h2 class="text-dark fs-4">Payment Information</h2>
         <p>See other pages here <a href="./ratings.html">Ratings</a>, <a href="./ratings_con.html">Reviews</a></p>
         <div class="py-5">
-            <button class="btn fs-6 btn-outline-primary mb-2">Debit Cards</button>
+            <button class="btn btn-outline-primary mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Debit Card
+              </button>
             <button class="btn btn-outline-primary mb-2 mx-1"><img src="./img/flutter_wave.png" alt="" style="width: 100px;"></button>
         </div>
         <div>
@@ -31,12 +33,12 @@
                 </div>  
             </div>                    
         </div>
-
-        <p>
+        <div class="collapse" id="collapseExample">
             <a class="mx-2 fs-6 text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseform" href="#collapseform" role="button" aria-expanded="false" aria-controls="collapseExample">
                 View card details
-            </a>  
-        </p>
+            </a> 
+          </div>
+        
         <div class="collapse" id="collapseform">
             <div class="">
                 <form class="mx-2 w-75" id="payment_form">
