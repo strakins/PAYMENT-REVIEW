@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Payment Information</title>
+</head>
+<body>
+
+   <section class="justify-content-center">
+    <div class="container p-5">
+        <h2 class="text-dark fs-4">Payment Information</h2>
+        <div class="py-5">
+            <button class="btn fs-6 btn-outline-primary mb-2">Debit Cards</button>
+            <button class="btn btn-outline-primary mb-2 mx-1"><img src="./img/flutter_wave.png" alt="" style="width: 100px;"></button>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="./img/debit_card.jpg" alt="" class="pb-2 img-fluid">                    
+                </div>
+                <div class="add-card col-12 col-md-6 "> 
+                    <button id="toggle" class="button btn btn-outline-primary mb-2"><img src="./img/add_col.svg" alt=""></button>
+                    <h6 class="pt-2" >Add New</h6>
+                    <h6 id="addCard_msg"></h6>
+                </div>  
+            </div>                    
+        </div>
+
+        <p>
+            <a class="mx-2 fs-6 text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseform" href="#collapseform" role="button" aria-expanded="false" aria-controls="collapseExample">
+                View card details
+            </a>  
+        </p>
+        <div class="collapse" id="collapseform">
+            <div class="">
+                <form class="mx-2 w-75" id="payment_form">
+                    <h3>Debit card details</h3>
+                    <div class="mb-3">
+                        <label class="form-label" for="cardNumber">Card Number</label>
+                        <input type="number" class="form-control" id="cardNumber" placeholder="1234 5678 9000">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <label class="form-label" for="currentDate">Expiration date (MM/YYYY)</label>
+                            <input type="date" class="form-control" id="currentDate" placeholder="16/10/2021">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label" for="customerCvv">cvv</label>
+                            <input type="number" class="form-control" id="customerCvv" placeholder="711">
+                        </div>
+                        
+                    </div>
+                    <div class="pt-3">
+                        <h5 class="text-danger fs-6">Remove card</h5>
+                    </div>
+                </form>
+            </div> 
+        </div>
+        
+        <!-- <div id="current_card" style="display: none;">
+            <form class="mx-2 w-75 " id="payment_form">
+                <h3>Debit card details</h3>
+                <div class="mb-3">
+                    <label class="form-label" for="cardNumber">Card Number</label>
+                    <input type="number" class="form-control" id="cardNumber" placeholder="1234 5678 9000">
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <label class="form-label" for="currentDate">Expiration date (MM/YYYY)</label>
+                        <input type="date" class="form-control" id="currentDate" placeholder="16/10/2021">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label class="form-label" for="customerCvv">cvv</label>
+                        <input type="number" class="form-control" id="customerCvv" placeholder="711">
+                    </div>
+                    
+                </div>
+                <div class="pt-3">
+                    <h5 class="text-danger fs-6">Remove card</h5>
+                </div>
+                
+            </form>
+        </div> -->
+        
+        <div id="card_detials" style="display: none;">
+            <form class="mx-2 w-75" id="cardentry_detials">
+                <h3 class="text-info">Please Enter Your Debit card details</h3>
+                <div class="mb-3">
+                    <label class="form-label" for="cardNumber">Card Number</label>
+                    <input type="number" class="form-control" id="cardNumber" placeholder="1234 5678 9000">
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <label class="form-label" for="currentDate">Expiration date (MM/YYYY)</label>
+                        <input type="date" class="form-control" id="currentDate" placeholder="16/10/2021">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label class="form-label" for="customerCvv">cvv</label>
+                        <input type="number" class="form-control" id="customerCvv" placeholder="711">
+                    </div>
+                    
+                </div>
+                <div class="pt-5" >
+                    <button class="btn btn-primary w-25">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+   </section>
+    
+
+    
+    <script src="./js/payment_info.js"></script>
+    
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
